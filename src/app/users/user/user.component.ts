@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class UserComponent implements OnInit, OnDestroy {
   user: {id: number, name: string};
-  paramsSubscription: Subscription
+  paramsSubscription: Subscription;
 
   constructor(private route: ActivatedRoute) { }
 
