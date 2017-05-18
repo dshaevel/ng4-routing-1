@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EditServerComponent } from './servers/edit-server/edit-server.component';
 import { ServerComponent } from './servers/server/server.component';
 import { ServersComponent } from './servers/servers.component';
@@ -34,6 +33,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
+  // imports: [RouterModule.forRoot(appRoutes, {useHash: true})],
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
